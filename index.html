@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propiedades en Venta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Propiedades en Venta</h1>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <h2>Subir Archivo de Propiedades</h2>
+      <input type="file" id="fileInput" accept=".xlsx, .xls" />
+    </section>
+
+    <section id="property-list">
+      <h2>Lista de Propiedades</h2>
+      <div id="propertyCards" class="cards-container">
+        <!-- Las tarjetas de propiedades se generarán aquí dinámicamente -->
+      </div>
+    </section>
+
+    
+
+    <section id="property-detail" style="display: none;">
+      <button id="backButton">Volver a la lista</button>
+      <div id="propertyDetailContainer">
+        <!-- Detalles de la propiedad seleccionada se mostrarán aquí -->
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
